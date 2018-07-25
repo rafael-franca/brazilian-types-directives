@@ -1,0 +1,35 @@
+{
+    "name": "rafael-franca/brazilian-types-directives",
+    "description": "Laravel Blade directives for brazilian types.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Franca",
+            "email": "rafaelfranca@hotmail.com.br",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/rafael-franca/brazilian-types-directives/issues",
+        "source": "https://github.com/rafael-franca/brazilian-types-directives"
+    },
+    "autoload": {
+        "psr-4": {
+            "RafaelFranca\\BrazilianTypesDirectives\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "laravel/framework": "^5.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RafaelFranca\\BrazilianTypesDirectives\\BrazilianTypesDirectivesServiceProvider"
+            ]
+        }
+    }
+}
