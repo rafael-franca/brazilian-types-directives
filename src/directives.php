@@ -13,7 +13,7 @@ return [
 	'cpf' => function ($expression) {
 		$expression = BrazilianTypesRepository::stripSpaces($expression);
 
-		return "<?php echo substr($this->expression, 0, 3) . '.' . substr($this->expression, 3, 3) . '.' .substr($this->expression, 6, 3) . '-' . substr($this->expression, 9, 2); ?>";
+		return "<?php echo substr($expression, 0, 3) . '.' . substr($expression, 3, 3) . '.' .substr($expression, 6, 3) . '-' . substr($expression, 9, 2); ?>";
 	},
 
 	/*
