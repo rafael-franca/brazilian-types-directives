@@ -60,7 +60,7 @@ return [
 	'dinheiro' => function ($expression) {
 		$expression = BrazilianTypesRepository::stripSpaces($expression);
 
-		return "<?php echo 'R$ ' . if ($expression) { number_format($expression, 2, ',', '.'); } ?>";
+		return "<?php if ($expression) { echo 'R$ ' . number_format($expression, 2, ',', '.'); } ?>";
 	},
 
 	/*
